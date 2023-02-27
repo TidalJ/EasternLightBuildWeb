@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./public/stylesheets/home.css">
     <script src="https://kit.fontawesome.com/ca2d1d9ef6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <title>Eastern</title>
 </head>
 
 <body>
@@ -24,6 +25,8 @@
                 <h1>{{ message }}</h1>
                 <img class="imgcard1" src="./public/images/3.jpg" alt="" srcset="">
             </div>
+
+
 
             <div class="smallcard">
                 <section class="hero-section">
@@ -65,6 +68,10 @@
                         </a>
                         <div>
                 </section>
+            </div>
+
+            <div class="imgmember">
+                <img src="./public/images/memberslo-removebg-preview.png" alt="">
             </div>
 
             <!-- <div class="midimg">
@@ -135,35 +142,35 @@
                         </li>
                         <li>
                             <a href="#">About Us</a>
-                            <ul>
+                            <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">Our Services</a>
-                            <ul>
+                            <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">Our Projects</a>
-                            <ul>
+                            <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">Our Process</a>
-                            <ul>
+                            <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
                 </nav>
@@ -212,7 +219,20 @@
         </div>
 
         <div class="curve curved-background__curved"></div>
+
     </div>
+    <div class="loader-wrapper">
+        <div id="load">
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+        </div>
+    </div>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script>
@@ -228,6 +248,11 @@
             }
         },
     })
+</script>
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+    });
 </script>
 
 </html>

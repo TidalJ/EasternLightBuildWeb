@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./stylesheets/projects.css">
     <script src="https://kit.fontawesome.com/ca2d1d9ef6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <title>Eastern</title>
 </head>
 
 <body>
@@ -49,9 +50,39 @@
         </div>
 
     </div>
-
+    <div class="loader-wrapper">
+        <div id="load">
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+        </div>
+    </div>
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Our Project',
+            tel: '0448088892',
+        },
+        methods: {
+            callus() {
+                window.location.href = 'tel://' + this.tel
+            }
+        },
+    })
+</script>
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
 
 </html>
