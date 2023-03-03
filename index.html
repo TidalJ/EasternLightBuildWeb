@@ -29,40 +29,44 @@
 
 
 
-            <div class="smallcard">
+            <div class="smallcard" id="smcard">
                 <section class="hero-section">
                     <div class="card-grid">
                         <a class="card" href="#">
-                            <div class="card__background" style="background-image: url(./public/images/home1.jpg)">
+                            <div class="card__background" style="background-image: url(./public/images/home1.jpg)"
+                                onclick="window.location.href='./public/residential.html'">
                             </div>
-                            <div class="card__content">
+                            <div class="card__content" onclick="window.location.href='./public/residential.html'">
                                 <p class="card__category">Main Business</p>
                                 <h3 class="card__heading">Residential</h3>
                             </div>
                         </a>
 
                         <a class="card" href="#">
-                            <div class="card__background" style="background-image: url(./public/images/home3.jpg)">
+                            <div class="card__background" style="background-image: url(./public/images/home3.jpg)"
+                                onclick="window.location.href='./public/commercial.html'">
                             </div>
-                            <div class="card__content">
+                            <div class="card__content" onclick="window.location.href='./public/commercial.html'">
                                 <p class="card__category">Main Business</p>
                                 <h3 class="card__heading">Commercial</h3>
                             </div>
                         </a>
 
                         <a class="card" href="#">
-                            <div class="card__background" style="background-image: url(./public/images/home4.jpg)">
+                            <div class="card__background" style="background-image: url(./public/images/home4.jpg)"
+                                onclick="window.location.href='./public/industrial.html'">
                             </div>
-                            <div class="card__content">
+                            <div class="card__content" onclick="window.location.href='./public/industrial.html'">
                                 <p class="card__category">Main Business</p>
                                 <h3 class="card__heading">Industrial</h3>
                             </div>
                         </a>
 
                         <a class="card" href="#">
-                            <div class="card__background" style="background-image: url(./public/images/home2.jpg)">
+                            <div class="card__background" style="background-image: url(./public/images/home2.jpg)"
+                                onclick="window.location.href='./public/others.html'">
                             </div>
-                            <div class="card__content">
+                            <div class="card__content" onclick="window.location.href='./public/others.html'">
                                 <p class="card__category">Main Business</p>
                                 <h3 class="card__heading">Others</h3>
                             </div>
@@ -142,7 +146,7 @@
 
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="#au">About Us</a>
                             <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
@@ -150,7 +154,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#">Our Services</a>
+                            <a href="#smcard">Our Services</a>
                             <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
@@ -158,26 +162,26 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#">Our Projects</a>
+                            <a href="./public/projects.html">Our Projects</a>
                             <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                             </ul> -->
                         </li>
-                        <li>
-                            <a href="#">Our Process</a>
-                            <!-- <ul>
+                        <!-- <li> -->
+                        <!-- <a href="#">Our Process</a> -->
+                        <!-- <ul>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                                 <li><a href="#">Subnav Item</a></li>
                             </ul> -->
-                        </li>
+                        <!-- </li> -->
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="au">
             <h4>Contact Us</h4>
             <div class="btndiv">
                 <button @click="callus">
